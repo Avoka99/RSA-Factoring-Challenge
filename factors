@@ -1,3 +1,5 @@
+# #!/usr/bin/env python3
+
 import sys
 from fractions import gcd
 
@@ -33,7 +35,7 @@ def main(file_path):
         for line in file:
             number = int(line.strip())
             factors = factorize_number(number)
-            print("{}={}*{}".format(number, factors[0], factors[1]))
+            print("{0}={1}*{2}".format(number, factors[0], factors[1]))
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
